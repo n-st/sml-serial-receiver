@@ -1,0 +1,100 @@
+v1.0.17 19-Jun-2014
+-------------------
+- changed the license from LGPL version 3 to LGPL version 2.1
+- library is uploaded to central repository
+- fixed bug in Integer64 using large integers (>32 bit) (thanks to
+  Patrick Hinzke from Kellendonk)
+- closed streams correctly in SML_TConnection (thanks to Patrick
+  Hinzke from Kellendonk)
+- fixed bug in List_of_SML_ObjReqEntry (thanks to Patrick
+  Hinzke from Kellendonk)
+
+v1.0.16 30-Dec-2013
+-------------------
+- a syntax check of the tl field in SequenceOf was removed so that
+  jSML is compatible with Hager EDL meters. Thanks to Jochen Burkhardt
+
+v1.0.15 02-Oct-2013
+-------------------
+- small bug fix in receive function of SML_TConnection thanks to David
+  Croft
+
+v1.0.14 10-Feb-2012
+-------------------
+- another bug fix in decodeAndCheck of SML_Message.java thanks to
+  Roland Schroth from RWE
+
+v1.0.13 06-Feb-2012
+-------------------
+- no code changes, only minor changes to the gradle build file
+
+v1.0.12 13-Jan-2012
+-------------------
+- addition of SML_TimestampLocal from the SML 1.4 draft thanks to
+  Prosyst
+
+v1.0.11 29-Nov-2011
+-------------------
+- connectTo Function can be passed a timeout. Thanks to Fabian
+  Kohlmorgen from FH-Dortmund for the idea.
+- CRC of SML_Message is now only checked if decodeAndCheck function is
+  called
+- switched to the Gradle build system
+
+v1.0.10 07-Nov-2011
+-------------------
+- another bug fix in SML_Message.java when checking CRC thanks to
+  Fabian Kohlmorgen from FH-Dortmund and prosyst
+- a small fix in OctetString.hashCode() thanks to Roland Schroth from
+  RWE
+
+v1.0.9 20-Oct-2011
+------------------
+- bug fix in SML_Message.java when checking CRC thanks to Fabian
+  Kohlmorgen from FH-Dortmund
+
+v1.0.8 05-Aug-2011
+------------------
+- bug fix in Unsigned64.java, thanks to Jan Heise and Boris Pigin from
+  Vattenfall
+
+v1.0.7 06-Apr-2011
+------------------
+- fixed bug in SML_ProcParValue
+- changed to maven build system
+
+v1.0.6 15-Feb-2011
+------------------
+- fixed synchronization problem in SML_SerialReceiver
+
+v1.0.5 20-Jan-2011
+------------------
+- improved the SSL support and included a sample that demonstrates the
+  use of SSL
+
+v1.0.3 16-Dec-2010
+------------------
+- added a simple class to receive SMLMessages (SML_SerialReceiver)
+  over a serial interface
+- This class can be used to read out the eHZ Meter
+
+v1.0.2 27-Aug-2010
+------------------
+- Additions to the OctetString Class - Thanks to ProSyst for the
+  contribution
+
+v1.0.1 15-Jul-2010
+------------------
+- SSL Support for the Server.
+- Added some missing SML-Objects
+
+v1.0 04-Mai-2010
+----------------
+- completely restructured the SML Transport Layer implementation and
+  API!
+- removed all loggers
+
+v0.9.1 18-Dec-2009
+------------------
+- Fixed CRC
+- fixed bug in ImplicitChoice
